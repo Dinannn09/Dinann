@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="form.css">
+<title>Halaman Kenangan</title>
+</head>
+<body></body>
+  <div class="login">
+		<form name="login" action="index.html" method="get" onSubmit="validate()">
+			<div>
+        <center> <h1>Login</h1> </center>
+        <p>Harap Masukan sesuatu yang spesial bagi anda.</p>
+				<hr size="3px" color="black" solid>
+        <label>Nama :</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+      <br>
+			<div>
+        <label>Password :</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <input type="checkbox"/>
+        <label>Apakah Anda Mencintaiku?</label>
+      </div>
+      <br>
+			<div>
+				<input type="submit" value="Send" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript">
+  function validate() {
+    var nama = document.getElementById("nama").value;
+    var nama = document.getElementById("password").value;
+    if (nama == "Zahra" && password == "190317") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+      goto: validate;
+		}
+  }
+</script>
+
+</html>
